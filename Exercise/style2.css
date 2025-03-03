@@ -1,0 +1,181 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d3b2e;
+    color: white;
+    text-align: center;
+}
+
+/* HEADER */
+.header {
+    background-color: #0d3b2e;
+    padding: 15px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* NAVIGATION */
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: yellow;
+}
+
+
+
+@media (min-width: 768px) {
+    .contact-button {
+        display: block;
+    }
+}
+
+/* HAMBURGER MENU */
+.menu-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .menu-button {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #1E293B;
+        width: 200px;
+        text-align: right;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 10px;
+    }
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    background: url('https://s359.kapook.com//pagebuilder/8666b384-37c7-48ab-8288-a230ba1269a8.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 900px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #d1d5db;
+}
+
+/* MENU SECTION */
+.menu {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.menu-category {
+    margin-bottom: 40px;
+}
+
+.menu-category h2 {
+    border-bottom: 2px solid gold;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+.menu-item {
+    margin: 20px 0;
+}
+
+.menu-item h3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.menu-item span {
+    color: gold;
+    font-weight: bold;
+}
+
+.menu-item p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* FULL IMAGE */
+.full-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* SEPARATOR */
+.separator {
+    height: 30px;
+    background: white;
+    margin: 20px 0;
+}
